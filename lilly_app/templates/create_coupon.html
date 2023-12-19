@@ -33,7 +33,7 @@
 
         <!-- Character Info Form -->
         <section>
-            <form id="CharacterInfo" action="/coupons/created/" method="post">
+            <form id="CouponInfo" action="/coupons/created/" method="post">
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="name">Name:</label>
@@ -47,14 +47,14 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="level">Location:</label>
+                    <label for="location">Location:</label>
                     <input type="text" class="form-control" id="location" name="location" placeholder="Location">
                 </div>
 
-                <!-- <div class="form-group">
-                    <label for="exp">EXP:</label>
-                    <input type="number" class="form-control" id="exp" name="exp" placeholder="Experience Points">
-                </div> -->
+                <div class="form-group">
+                    <label for="datetime-local">Date & Time:</label>
+                    <input type="datetime-local" class="form-control" id="datetime-local" name="date" placeholder="Date">
+                </div>
 
                 <!-- Base Stats -->
                 <!-- <fieldset class="form-group">
